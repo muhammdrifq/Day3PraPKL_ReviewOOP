@@ -1,7 +1,7 @@
 <?php
     class Guru extends Database
     {
-        // Menampilkan data dosen ke index.php
+        // Menampilkan data Guru ke index.php
         public function index()
         {
             $dataguru = mysqli_query($this->koneksi,"select * from guru");
@@ -16,7 +16,7 @@
                 );
         }
 
-        // memilih data dosen yang akan diubah
+        // memilih data Guru yang akan diubah
         public function edit($no)
         {
             
@@ -26,7 +26,7 @@
 
             return $dataguru;
         }
-        // merubah data dosen
+        // merubah Guru dosen
         public function update($no, $nip, $nama, $alamat)
         {
             mysqli_query(
@@ -35,7 +35,7 @@
             );
         }
 
-        // Menampilkan data dosen berdasarkan id
+        // Menampilkan data Guru berdasarkan id
         public function show($no)
         {
            $dataguru = mysqli_query(
@@ -44,7 +44,7 @@
            );
         }
 
-        // Menghapus data dosen
+        // Menghapus data Guru
         public function delete($no)
         {
             mysqli_query(
