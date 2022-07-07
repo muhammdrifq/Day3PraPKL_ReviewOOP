@@ -13,7 +13,7 @@
                 $this->db
             );
             if($this->koneksi){
-                //echo "Koneksi Berhasil";
+                echo "Koneksi Berhasil";
             }
             else{
                 echo "Koneksi Database Gagal";
